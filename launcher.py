@@ -13,7 +13,7 @@ if mode == 'fast':
     time.sleep(1)
     exec(fastCode)
 elif mode == 'safe':
-    print('Sticking to the safe side, I see. Good choice. Bans may still occur but it is much more stealthy.')
+
     print('Downloading the latest version from Github...')
     saferCode = requests.get('https://raw.githubusercontent.com/danked-sb/danked/main/safe.py').text
     safe_changelog = requests.get('https://github.com/danked-sb/danked/raw/main/safe_changelog.txt').text
