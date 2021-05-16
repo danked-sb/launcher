@@ -2,7 +2,9 @@ import requests, time
 
 print('Welcome to Danked launcher.')
 print('''Which mode would you like to use? Type safe or fast.''')
+
 mode = input('> ')
+
 if mode == 'fast':
     print('This is the fast version, so expect a ban/blacklist after a few hours.')
     print('Downloading the latest version from Github...')
@@ -12,6 +14,7 @@ if mode == 'fast':
     print(f'''CHANGELOG: \n{fast_changelog}''')
     time.sleep(1)
     exec(fastCode)
+    
 elif mode == 'safe':
     print('Bans may still occur but it is much more stealthy.')
     print('Downloading the latest version from Github...')
