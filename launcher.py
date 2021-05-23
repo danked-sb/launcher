@@ -25,3 +25,5 @@ elif mode == 'safe':
     time.sleep(1)
     exec(saferCode)
 
+
+    
